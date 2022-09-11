@@ -70,6 +70,9 @@ boot(void)
 		GROUP_VERSION, buildconfig, buildversion);
 	kprintf("\n");
 
+	// Added by Sid Suresh
+	hello();
+
 	ram_bootstrap();
 	scheduler_bootstrap();
 	thread_bootstrap();
