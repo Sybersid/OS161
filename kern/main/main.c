@@ -72,6 +72,16 @@ boot(void)
 
 	// Added by Sid Suresh
 	hello();
+	DEBUG(DB_VM, "Sample debug message of VM.\n");
+	DEBUG(DB_SYSCALL, "Sample debug message of SYSCALL.\n");
+	DEBUG(DB_INTERRUPT, "Sample debug message of INTERRUPT.\n");
+	DEBUG(DB_DEVICE, "Sample debug message of DEVICE.\n");
+	DEBUG(DB_THREADS, "Sample debug message of THREADS.\n");
+	DEBUG(DB_VFS, "Sample debug message of VFS.\n");
+	DEBUG(DB_SFS, "Sample debug message of SFS.\n");
+	DEBUG(DB_NET, "Sample debug message of NET.\n");
+	DEBUG(DB_EXEC, "Sample debug message of EXEC.\n");
+	DEBUG(DB_NETFS, "Sample debug message of NETFS.\n");
 
 	ram_bootstrap();
 	scheduler_bootstrap();
